@@ -70,6 +70,10 @@ def bbwc_realtime(category=''):
     from rsshub.spiders.bbwc.realtime import ctx
     return render_template('main/atom.xml', **filter_content(ctx(category)))
 
+@bp.route('/fjtv/dianbo/<string:id>')
+def fjtv_dianbo(id=''):
+    from rsshub.spiders.fjtv.dianbo import ctx
+    return render_template('main/atom.xml', **filter_content(ctx(id)))
 
 @bp.route('/infoq/recommend')
 def infoq_recommend():
