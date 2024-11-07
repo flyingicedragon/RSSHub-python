@@ -5,8 +5,8 @@
     <div class="card-body">
         <h4 class="card-title">RSS Filter参数</h4>
         <h6 class="text-muted">RSS 过滤参数<a href="https://github.com/hillerliao" target="_blank" class="badge badge-secondary">by hillerliao</a></h6>
-        <p class="card-text">举例：<a href="https://pyrsshub.vercel.app/filter?feed=https://sspai.com/feed&include_title=派早报" target="_blank">https://pyrsshub.vercel.app/filter?feed=https://sspai.com/feed&include_title=派早报</a></p>
-        <p class="card-text">参数：<code>include_title</code> 匹配标题</p>
+        <p class="card-text">举例：<a href="https://pyrsshub.vercel.app/filter?feed=https://sspai.com/feed&include_title=派早报" target="_blank">https://pyrsshub.vercel.app/filter?feed=https://sspai.com/feed&include_title=征文|派早报</a></p>
+        <p class="card-text">参数：<code>include_title</code> 匹配标题，支持多关键词，用 | 分隔。</p>
         <p class="card-text">参数：<code>include_description</code> 匹配摘要</p>
         <p class="card-text">参数：<code>exclude_title</code> 排除标题</p>
         <p class="card-text">参数：<code>exclude_description</code> 排除摘要</p>
@@ -49,6 +49,12 @@
         <h6 class="text-muted">NHK - Web News Easy <a href="https://github.com/hillerliao" target="_blank" class="badge badge-secondary">by hillerliao</a></h6>
         <p class="card-text">举例：<a href="https://pyrsshub.vercel.app/nhk/newseasy" target="_blank">https://pyrsshub.vercel.app/nhk/newseasy</a></p>
         <p class="card-text">路由：<code>/nhk/newseasy</code></p>
+
+        <h6 class="text-muted">NHK - topic news <a href="https://github.com/hillerliao" target="_blank" class="badge badge-secondary">by hillerliao</a></h6>
+        <p class="card-text">举例：<a href="https://pyrsshub.vercel.app/nhk/topic/0001595" target="_blank">https://pyrsshub.vercel.app/nhk/topic/0001595</a></p>
+        <p class="card-text">路由：<code>/nhk/topic/:category</code></p>
+        <p class="card-text">参数：category, topic id</p>
+
     </div>
 </div>
 <br>
@@ -250,7 +256,7 @@
         <h6 class="text-muted">图书 <a href="https://github.com/hillerliao" target="_blank" class="badge badge-secondary">by hillerliao</a></h6>
         <p class="card-text">举例：<a href="https://pyrsshub.vercel.app/tadoku/books/l0" target="_blank">https://pyrsshub.vercel.app/tadoku/books/l0</a></p>
         <p class="card-text">路由：<code>/tadoku/books/:category</code></p>
-        <p class="card-text">参数：category [必填，难度等级，l0、l1、l2、l3、l4、l5 ]</p>
+        <p class="card-text">参数：category [必填，难度等级，l0、l1、l2、l3、l4、l5、0。0为不指定 ]</p>
     </div>
 </div>
 <br>
